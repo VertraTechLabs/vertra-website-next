@@ -2218,3 +2218,173 @@ a {
     gap: 22px;
   }
 }
+
+/* MOBILE HERO FIX */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding: 110px 0 60px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+    font-size: clamp(42px, 12vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 96px 0 52px;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 24px;
+    font-size: 10px;
+  }
+
+  .hero-heading {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 0.97;
+  }
+
+  .hero-description {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+
+  .hero-path {
+    gap: 7px;
+    font-size: 8px;
+  }
+}
+
+/* MOBILE CAPABILITIES FIX */
+
+@media (max-width: 760px) {
+  .capabilities-heading {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .capability-card h3 {
+    font-size: 30px;
+    line-height: 1.05;
+  }
+}
+
+/* MOBILE WIDTH / OVERFLOW FIX */
+
+@media (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .site-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .hero-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-heading {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(36px, 10vw, 46px);
+    line-height: 0.98;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .capabilities-heading {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .capabilities-heading-main {
+    min-width: 0;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .capability-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
