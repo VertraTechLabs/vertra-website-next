@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectForm from "@/components/ProjectForm";
+import SiteFooter from "../components/SiteFooter";
 
 export default function Home() {
   return (
@@ -409,10 +410,7 @@ export default function Home() {
 
               <div className="about-main">
                 <h2>
-                  WE&apos;RE BUILDING MORE THAN WEBSITES.
-                  <br />
-                  WE&apos;RE BUILDING SYSTEMS FOR{" "}
-                  <span>WHAT&apos;S NEXT.</span>
+                  WE&apos;RE BUILDING SYSTEMS FOR <span>WHAT&apos;S NEXT.</span>
                 </h2>
 
                 <div className="about-content-grid">
@@ -551,6 +549,77 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="insights" className="insights-section">
+          <div className="site-container">
+            <div className="section-heading-row">
+              <div>
+                <p className="section-eyebrow">INSIGHTS</p>
+                <h2>
+                  THINKING BEYOND THE <span>BUILD.</span>
+                </h2>
+              </div>
+
+              <p className="section-description">
+                Ideas, perspectives and practical insights on artificial intelligence,
+                software, automation, digital products and the technology shaping
+                modern business.
+              </p>
+            </div>
+
+            <div className="insights-grid">
+              <article className="insight-card">
+                <span className="insight-number">01</span>
+                <p className="insight-category">ARTIFICIAL INTELLIGENCE</p>
+
+                <h3>
+                  How AI Is Changing the Way Businesses Handle Leads and Customer
+                  Communication
+                </h3>
+
+                <p>
+                  A look at how intelligent systems can help businesses respond faster,
+                  organize opportunities and improve the customer journey.
+                </p>
+
+                <span className="insight-link">COMING SOON -&gt;</span>
+              </article>
+
+              <article className="insight-card">
+                <span className="insight-number">02</span>
+                <p className="insight-category">SOFTWARE</p>
+
+                <h3>
+                  Why Growing Businesses Eventually Outgrow Disconnected Tools
+                </h3>
+
+                <p>
+                  Exploring when custom software, automation and integrated systems
+                  begin to make more sense than adding another standalone tool.
+                </p>
+
+                <span className="insight-link">COMING SOON -&gt;</span>
+              </article>
+
+              <article className="insight-card">
+                <span className="insight-number">03</span>
+                <p className="insight-category">DIGITAL STRATEGY</p>
+
+                <h3>
+                  Your Website Should Be the Beginning of Your Digital System
+                </h3>
+
+                <p>
+                  Modern websites can do more than present information. They can become
+                  the front door to a connected business infrastructure.
+                </p>
+
+                <span className="insight-link">COMING SOON -&gt;</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
         <section className="contact-section" id="contact">
           <div className="site-container">
             <div className="contact-top">
@@ -558,9 +627,7 @@ export default function Home() {
 
               <div className="contact-heading">
                 <h2>
-                  HAVE AN IDEA?
-                  <br />
-                  LET&apos;S BUILD WHAT&apos;S <span>NEXT.</span>
+                  HAVE AN IDEA? LET&apos;S BUILD WHAT&apos;S <span>NEXT.</span>
                 </h2>
 
                 <p>
@@ -604,11 +671,13 @@ export default function Home() {
               </div>
               <ProjectForm />
 
-             
+
             </div>
           </div>
         </section>
       </main>
+
+      <SiteFooter />
     </>
   );
 }
