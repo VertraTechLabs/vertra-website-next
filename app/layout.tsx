@@ -16,6 +16,26 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://vertratechnologies.com/"),
   title: "Vertra Technologies",
   applicationName: "Vertra Technologies",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico?v=vertra-20261031",
+        type: "image/x-icon",
+        sizes: "16x16 32x32 48x48",
+      },
+      {
+        url: "/icon.png?v=vertra-20261031",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    shortcut: "/favicon.ico?v=vertra-20261031",
+    apple: {
+      url: "/apple-icon.png?v=vertra-20261031",
+      type: "image/png",
+      sizes: "180x180",
+    },
+  },
   description:
     "Vertra Technologies builds software, AI-powered solutions, websites, mobile applications, automation systems, and innovative digital products.",
   alternates: {
